@@ -1,0 +1,58 @@
+.icard{
+	position: absolute;
+	padding: 10px;
+	height: 200px; width: 150px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: white;
+	display: inline-block;
+	top:0;
+	left:0;
+}
+
+#message{
+	font-size:1.2em;
+	color: white;
+	background-color: black;
+	padding: 10px;
+}
+
+.cardtop{
+	font-size: 2em;
+	height: 40px;
+	line-height: 0.7em;
+
+}
+
+.cardmid{
+	text-align: center;
+	font-size: 7em;
+	height: 110px;
+}
+
+.cardbottom{
+	font-size: 2em;
+	height: 40px;
+	line-height: 0.7em;
+	transform: rotate(-180deg);
+
+}
+
+.hearts .suit::after{ content: '\2665'; }
+.spades .suit::after{ content: '\2660'; }
+.clubs .suit::after{ content: '\2663'; }
+.diams .suit::after{ content: '\2666'; }
+
+.spades, .clubs{ color: black; }
+.hearts, .diams{ color: red; }
+
+.hand{
+	position: relative;
+}
+
+.players{
+	float:left;
+	width:49%;
+	min-height: 300px;
+	border:1px solid #ddd;
+}
